@@ -25,8 +25,8 @@ class API(MethodView):
     """
 
     ERROR_MAP = {
-        Unauthorized: errors.AuthException,
-        NotFound: errors.EndpointNotFoundException,
+        Unauthorized: errors.AuthException(),
+        NotFound: errors.EndpointNotFoundException(),
     }
 
     def __call(self, method: str, callback: object, *args, **kwargs) -> tuple:

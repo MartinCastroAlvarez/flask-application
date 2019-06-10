@@ -16,6 +16,7 @@ services:
             - DB_USER=postgres
             - DB_PASS=beri_diifiikuult
             - DB_HOST=maria-db-service
+            - DB_PORT=5432
             - DB_NAME=maria_dataveis
     maria-db-service:
         image: postgres:10
