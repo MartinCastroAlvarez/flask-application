@@ -1,0 +1,28 @@
+version: '3'
+services:
+    maria-web-service:
+        build: .
+        restart: always
+        depends_on:
+            - maria-db-service
+        links:
+            - maria-db-service:maria-db-service
+        ports:
+            - "5000:80"
+        environment:
+            - SECRET=981298319823h8912381283h19823 
+            - ADMIN_USERNAME=admin
+            - ADMIN_PASSWORD=admin
+            - DB_USER=postgres
+            - DB_PASS=beri_diifiikuult
+            - DB_HOST=maria-db-service
+            - DB_NAME=maria_dataveis
+    maria-db-service:
+        image: postgres:10
+        restart: always
+        ports:
+            - "5432:5432"
+        environment:
+            POSTGRES_PASSWORD: beri_diifiikuult
+            POSTGRES_DB: maria_dataveis
+            POSTGRES_USER: postgres
