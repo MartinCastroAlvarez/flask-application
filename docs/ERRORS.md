@@ -79,6 +79,7 @@ Error subcodes are always provided.
 * *4008*: Bad Page Number.
 * *4009*: Bad Page Limit.
 * *4010*: Bad Release Date.
+* *4011*: Movie Not found.
 
 ##### Conflict Errors (9xxx)
 * *9001*: Alias is already taken.
