@@ -13,7 +13,7 @@ export API="http://0.0.0.0:5000"
 ```
 If running in the production environment:
 ```
-export API="https://maria.martincastroalvarez.com"
+export API="http://52.34.189.153:5000"
 ```
 These variables are commont for all cases:
 ```
