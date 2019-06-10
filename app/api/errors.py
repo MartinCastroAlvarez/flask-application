@@ -195,6 +195,15 @@ class ReleaseDateFormException(FormException):
     MESSAGE = "Invalid release date."
 
 
+class MovieNotFoundException(FormException):
+    """
+    Raised when movie doesn't exist.
+    """
+    CODE = 404
+    SUBCODE = 401
+    MESSAGE = "Person does not exist."
+
+
 class AliasTakenException(FormException):
     """
     Raised if person alias is already taken.
