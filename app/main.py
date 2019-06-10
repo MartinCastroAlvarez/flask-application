@@ -18,7 +18,7 @@ import api.people
 import api.movies
 import api.roles
 
-from api.controller.auth import login_manager, AuthController
+from api.controller.users import login_manager, AuthController
 from api.controller.models import db
 
 logger = logging.getLogger(__name__)
