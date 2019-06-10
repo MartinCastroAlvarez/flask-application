@@ -200,8 +200,8 @@ class MovieNotFoundException(FormException):
     Raised when movie doesn't exist.
     """
     CODE = 404
-    SUBCODE = 401
-    MESSAGE = "Person does not exist."
+    SUBCODE = 4011
+    MESSAGE = "Movie does not exist."
 
 
 class AliasTakenException(FormException):
