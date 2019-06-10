@@ -12,6 +12,6 @@
 * [Error Codes](./docs/ERRORS.md)
 
 ### Tests Documentation
-* [Tests](./docs/UNIT.md)
+* [Unit Tests](./docs/UNIT.md)
 * [QA Tests](./docs/TESTS.md)
 * [Security Tests](./docs/SECURITY.md)
