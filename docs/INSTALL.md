@@ -11,8 +11,8 @@ You may or may not need to run this as sudo.
 It depends on your local permissions.
 ```
 cd maria
-sudo docker-compose build
-sudo docker-compose up
+sudo docker-compose build 
+sudo docker-compose up -d
 ```
 
 ### Health Check

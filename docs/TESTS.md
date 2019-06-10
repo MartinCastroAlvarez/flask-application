@@ -35,6 +35,17 @@ Should return:
 }
 ```
 
+##### Admin Login Test
+```
+curl -c ${COOKIE_JAR} -X POST "${API}/api/v1/auth" -H "Content-Type: application/json" -d '{"username": "'${ADMIN_USERNAME}'", "password": "'${ADMIN_PASSWORD}'"}'
+```
+Should return:
+```
+{
+  "token": "..."  # A random token is returned.
+}
+```
+
 ### Authentication Tests
 Due to the importance of security testing, it has been moved to a different document [here](./SECURITY.md).
 However, you need to follow those instructions in order to generate a cookie jar. Otherwise, you won't be able to access the protected methods.
